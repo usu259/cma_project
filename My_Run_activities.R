@@ -52,5 +52,9 @@ all_data <- bind_rows(race_10k_allrecords,
                       training_run3_allrecords,
                       training_run4_allrecords,
                       training_run5_allrecords)
+#Export of dataset
+write.csv(all_data, "My_runs.csv", row.names = FALSE)
+
+
   
 
