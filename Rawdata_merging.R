@@ -35,13 +35,13 @@ training_run4 <- readFitFile("Corsa_pomeridiana_2509.fit")
 training_run4_allrecords <- records(training_run4) %>%
   bind_rows()%>%
   arrange(timestamp) %>%
-  mutate(run_id = "Run_04", context = "training")
+  mutate(run_id = "Run_4", context = "training")
 #Training Run 5
 training_run5 <- readFitFile("Corsa_pomeridiana_3009.fit")
 training_run5_allrecords <- records(training_run5) %>%
   bind_rows()%>%
   arrange(timestamp) %>%
-  mutate(run_id = "Run_05", context = "training")
+  mutate(run_id = "Run_5", context = "training")
 
 
 #Merging all dataset
